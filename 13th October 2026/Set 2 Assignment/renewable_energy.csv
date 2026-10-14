@@ -1,0 +1,9 @@
+Plant_ID,Plant_Name,State,Energy_Type,Capacity_MW,Actual_Output_MW,Operating_Hours,Maintenance_Cost
+P101,SunGrid One,Rajasthan,Solar,120,98,9,45000
+P102,WindArc West,Gujarat,Wind,150,132,18,62000
+P103,HydroPeak,Kerala,Hydro,200,176,20,78000
+P104,SolarEdge,Telangana,Solar,100,81,8,38000
+P105,WindCore,Tamil Nadu,Wind,180,149,17,71000
+P106,RiverForce,Uttarakhand,Hydro,220,194,21,84000
+P107,SunValley,Madhya Pradesh,Solar,140,112,10,52000
+P108,CoastalWind,Odisha,Wind,160,138,19,66000

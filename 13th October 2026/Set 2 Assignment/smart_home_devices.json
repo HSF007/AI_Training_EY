@@ -1,0 +1,53 @@
+[
+  {
+    "device_id": "D301",
+    "device_type": "Thermostat",
+    "room": "Living Room",
+    "status": "Active",
+    "metrics": {
+      "temperature": 24,
+      "battery": 82
+    },
+    "alerts": ["High usage"]
+  },
+  {
+    "device_id": "D302",
+    "device_type": "Camera",
+    "room": "Entrance",
+    "status": "Active",
+    "metrics": {
+      "battery": 65
+    }
+  },
+  {
+    "device_id": "D303",
+    "device_type": "Air Quality Sensor",
+    "room": "Bedroom",
+    "status": "Inactive",
+    "metrics": {
+      "air_quality_index": 78,
+      "battery": 40
+    },
+    "alerts": ["Battery low"]
+  },
+  {
+    "device_id": "D304",
+    "device_type": "Thermostat",
+    "room": "Study",
+    "status": "Active",
+    "metrics": {
+      "temperature": 27,
+      "battery": 74
+    }
+  },
+  {
+    "device_id": "D305",
+    "device_type": "Smart Lock",
+    "room": "Back Door",
+    "status": "Active",
+    "metrics": {
+      "battery": 55
+    },
+    "alerts": ["Firmware update available"]
+  }
+]
