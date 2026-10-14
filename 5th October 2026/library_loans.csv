@@ -1,0 +1,7 @@
+Loan_ID,Member_Name,Book_Category,Days_Borrowed,Fine
+L001,Nora,Fiction,7,0
+L002,Dev,Science,18,120
+L003,Ibrahim,History,12,40
+L004,Meera,Fiction,21,180
+L005,Rohan,Technology,9,0
+L006,Sana,Science,15,70

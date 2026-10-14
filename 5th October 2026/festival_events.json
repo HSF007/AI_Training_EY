@@ -1,0 +1,31 @@
+[
+  {
+    "event_id": "E101",
+    "name": "Food Carnival",
+    "location": {
+      "city": "Kochi",
+      "venue": "Marine Ground"
+    },
+    "visitors": 850,
+    "features": ["food", "music"]
+  },
+  {
+    "event_id": "E102",
+    "name": "Book Fair",
+    "location": {
+      "city": "Bhopal",
+      "venue": "Central Hall"
+    },
+    "visitors": 620
+  },
+  {
+    "event_id": "E103",
+    "name": "Tech Expo",
+    "location": {
+      "city": "Ahmedabad",
+      "venue": "Expo Centre"
+    },
+    "visitors": 1200,
+    "features": ["AI", "Robotics", "Startups"]
+  }
+]
