@@ -1,0 +1,360 @@
+/* Works on top of Vite's default index.css (fonts, light/dark colors, buttons). */
+
+#root {
+  width: 100%;
+}
+
+.app {
+  --border: color-mix(in srgb, currentColor 16%, transparent);
+  --muted: color-mix(in srgb, currentColor 62%, transparent);
+  --surface: color-mix(in srgb, currentColor 3%, transparent);
+  --good: #2f9e66;
+  --bad: #e5484d;
+  --accent: #646cff;
+  box-sizing: border-box;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+  text-align: left;
+}
+
+.app *,
+.app *::before,
+.app *::after {
+  box-sizing: border-box;
+}
+
+.app h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.app h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.app h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--surface);
+}
+
+.narrow {
+  max-width: 520px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.topbar h1,
+.topbar h2 {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.grow {
+  flex: 1 1 260px;
+}
+
+/* ---------- tabs ---------- */
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+
+.app button.tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.6em 1em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.app button.tab.active {
+  color: inherit;
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- form controls ---------- */
+
+.app input {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  padding: 0.55em 0.75em;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.app input:focus-visible,
+.app button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.app input[type='checkbox'] {
+  width: 1.1rem;
+  height: 1.1rem;
+  padding: 0;
+}
+
+.small {
+  width: 4.5rem;
+}
+
+.app label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.app label.inline {
+  flex-direction: row;
+  align-items: center;
+}
+
+.model-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.app button {
+  font-size: 0.9rem;
+  padding: 0.5em 1em;
+}
+
+.app button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.app button.danger,
+.app button.bad {
+  color: var(--bad);
+}
+
+.app button.good {
+  color: var(--good);
+}
+
+.app button.good.active {
+  background: var(--good);
+  border-color: var(--good);
+  color: #fff;
+}
+
+.app button.bad.active {
+  background: var(--bad);
+  border-color: var(--bad);
+  color: #fff;
+}
+
+.app button.link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.75rem;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.app button.link.inline-link {
+  margin: 0;
+  font-size: inherit;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  color: var(--bad);
+  margin: 0.5rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- tables ---------- */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.app table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.app th,
+.app td {
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.app th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.app .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.app .best {
+  color: var(--good);
+  font-weight: 700;
+}
+
+.actions {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.actions button + button {
+  margin-left: 0.4rem;
+}
+
+.clip {
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: baseline;
+}
+
+/* ---------- compare results ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.result header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.answer {
+  flex: 1;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* ---------- dashboard ---------- */
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.kpi-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.kpi-value {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.kpi-detail {
+  font-size: 0.8rem;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.chart-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.5rem;
+  background: var(--surface);
+  min-width: 0; /* lets Recharts shrink inside the grid */
+}
+
+.chart-card.wide {
+  grid-column: 1 / -1;
+}
+
+.app details {
+  margin-top: 1rem;
+}
+
+.app summary {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}

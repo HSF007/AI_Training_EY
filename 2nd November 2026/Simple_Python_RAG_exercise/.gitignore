@@ -1,0 +1,4 @@
+.env
+api_secret.txt
+chroma_db/
+myenv/
