@@ -1,3 +1,4 @@
 library-ai-chat/backend/.env
 library-ai-chat/frontend/node_modules
 *__pycache__
+*.env
