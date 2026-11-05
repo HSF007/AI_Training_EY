@@ -1,0 +1,30 @@
+[
+  {
+    "id": "B001",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "available_copies": 4
+  },
+  {
+    "id": "B002",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self Help",
+    "available_copies": 3
+  },
+  {
+    "id": "B003",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "available_copies": 1
+  },
+  {
+    "id": "B004",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Productivity",
+    "available_copies": 2
+  }
+]
