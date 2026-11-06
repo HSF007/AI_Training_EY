@@ -24,12 +24,12 @@ model = ChatOpenAI(
 )
 
 # STEP 3: Create agent
-agent = create_agent(
-    model=model,
-    tools=[search_workshops, calculate_workshop_fee],
-    system_prompt="You are a helpful workshop assistant.",
-    checkpointer=InMemorySaver()
-)
+# agent = create_agent(
+#     model=model,
+#     tools=[search_workshops, calculate_workshop_fee],
+#     system_prompt="You are a helpful workshop assistant.",
+#     checkpointer=InMemorySaver()
+# )
 
 # STEP 3: Create agent
 agent = create_agent(
