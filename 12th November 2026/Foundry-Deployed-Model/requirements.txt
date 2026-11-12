@@ -1,0 +1,4 @@
+openai
+python-dotenv>=1.0,<2.0
+agent-framework-openai>=1.0,<2.0
+agent-framework-orchestrations>=1.0,<2.0
